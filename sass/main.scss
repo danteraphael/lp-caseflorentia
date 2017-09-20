@@ -1,0 +1,130 @@
+@import "node_modules/mediaqueries-sass-mixin/mediaqueries-sass-mixin";
+
+// Base font size to convert from px to rem
+$mq-font-size: 16px !default;
+
+// Default media type
+$mq-media-type: 'screen' !default;
+
+// Default breakpoints
+$mq-breakpoints: (
+    small: 544px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+) !default;
+
+// Color Swatch
+$color-base: #31210b; // Dark brown
+$color-highlight: #a63932; // Not used
+$color-scondary: #946f4c; // Light brown
+$color-background: #f4f2ef; // Very light brown
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant:400');
+
+$sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
+$serif: "Cormorant",Times,"Times New Roman",serif;
+
+.lp-florentina {
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: $color-base;
+  font-family: 'Open Sans', Montserrat, sans-serif;
+
+
+  @include breakpoint(small) {
+    font-size: 16px;
+  }
+}
+
+// Hero theme
+.lp-florentina__hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+}
+
+.lp-florentina__hero-content,
+.lp-florentina__content {
+  background-color: $color-background;
+  padding: 1rem;
+
+  @include breakpoint(small) {
+    padding: 4rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+  }
+}
+
+// Section theme
+.lp-florentina__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  margin-bottom: 1rem;
+  border: 1px solid darken($color-background, 5%);
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    flex-flow: row;
+    margin-bottom: 3rem;
+  }
+}
+
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
+.lp-florentina__content,
+.lp-florentina__section-image {
+  width: 100%;
+
+  @include breakpoint(medium) {
+    width: 50%;
+    flex: 1;
+  }
+}
+
+.lp-florentina__section-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: $color-scondary;
+  border-bottom: 1px solid $color-base;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint(small) {
+    font-size: 4.5rem;
+    margin-right: -4rem;
+  }
+}
+
+
+.lp-florentina__section-content {
+  display: block;
+  margin-bottom: 2rem;
+  @include breakpoint(small) {
+    margin-bottom: 4rem;
+  }
+}
+
+.lp-florentina__section-image {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+  @include breakpoint(small) {
+    margin: 0;
+    padding: 0;
+  }
+}

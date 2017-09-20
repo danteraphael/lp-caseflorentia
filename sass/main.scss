@@ -1,0 +1,25 @@
+@import "node_modules/mediaqueries-sass-mixin/mediaqueries-sass-mixin";
+
+// Base font size to convert from px to rem
+$mq-font-size: 16px !default;
+
+// Default media type
+$mq-media-type: 'screen' !default;
+
+// Default breakpoints
+$mq-breakpoints: (
+    small: 544px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+) !default;
+
+
+$color-highlight: '#a63932';
+$sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
+$serif: "Cormorant",Times,"Times New Roman",serif;
+
+.lp-partners {
+  
+}

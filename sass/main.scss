@@ -20,6 +20,29 @@ $color-highlight: '#a63932';
 $sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
 $serif: "Cormorant",Times,"Times New Roman",serif;
 
-.lp-partners {
-  
+.lp-florentina {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.lp-florentina-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    flex-flow: row;
+  }
+}
+
+.lp-florentina-content,
+.lp-florentina-image {
+  width: 100%;
+
+  @include breakpoint(small) {
+    width: 50%;
+  }
 }

@@ -15,7 +15,6 @@ $mq-breakpoints: (
     xxlarge: 1440px,
 ) !default;
 
-
 $color-highlight: '#a63932';
 $sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
 $serif: "Cormorant",Times,"Times New Roman",serif;
@@ -26,7 +25,12 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 }
 
 .lp-florentina__hero {
+  display: flex;
+  flex-direction: column;
 
+  @include breakpoint(small) {
+    flex-direction: row;
+  }
 }
 
 .lp-florentina__section {
@@ -42,6 +46,8 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   }
 }
 
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
 .lp-florentina__content,
 .lp-florentina__image {
   width: 100%;

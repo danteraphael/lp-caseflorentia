@@ -31,6 +31,13 @@
   max-width: 920px;
   margin: 0 auto; }
 
+.lp-florentina__hero {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__hero {
+      flex-direction: row; } }
+
 .lp-florentina__section {
   display: flex;
   align-items: center;
@@ -42,10 +49,14 @@
       flex-direction: row;
       flex-flow: row; } }
 
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
 .lp-florentina__content,
 .lp-florentina__image {
   width: 100%; }
   @media screen and (min-width: 34em) {
+    .lp-florentina__hero-content,
+    .lp-florentina__hero-image,
     .lp-florentina__content,
     .lp-florentina__image {
       width: 50%; } }

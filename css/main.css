@@ -1,0 +1,62 @@
+/**
+ * Mediaqueries Sass Mixin
+ * Author Javier Puche Victoria
+ * Version 1.2.1
+ * https://github.com/javipuche/mediaqueries-sass-mixin
+ * Licensed under MIT Open Source
+ */
+/**
+ * Default config
+ */
+/**
+ * Px to Em [Function]
+ */
+/**
+ * Map Next Value [Function]
+ * Get Next value from sass map
+ */
+/**
+ * Breakpoint Type [Function]
+ * Check if a value is a key map, number or direction
+ */
+/**
+ * Breakpoint [Function]
+ * Check selected Breakpoint
+ */
+/**
+ * Breakpoint [Mixin]
+ * Return media query
+ */
+.lp-florentina {
+  max-width: 920px;
+  margin: 0 auto; }
+
+.lp-florentina__hero {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__hero {
+      flex-direction: row; } }
+
+.lp-florentina__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section {
+      flex-direction: row;
+      flex-flow: row; } }
+
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
+.lp-florentina__content,
+.lp-florentina__image {
+  width: 100%; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__hero-content,
+    .lp-florentina__hero-image,
+    .lp-florentina__content,
+    .lp-florentina__image {
+      width: 50%; } }

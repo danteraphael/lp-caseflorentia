@@ -85,11 +85,12 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 .lp-florentina__hero-content,
 .lp-florentina__hero-image,
 .lp-florentina__content,
-.lp-florentina__image {
+.lp-florentina__section-image {
   width: 100%;
 
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     width: 50%;
+    flex: 1;
   }
 }
 
@@ -114,5 +115,16 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   margin-bottom: 2rem;
   @include breakpoint(small) {
     margin-bottom: 4rem;
+  }
+}
+
+.lp-florentina__section-image {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+  @include breakpoint(small) {
+    margin: 0;
+    padding: 0;
   }
 }

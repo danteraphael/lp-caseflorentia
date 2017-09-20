@@ -27,11 +27,13 @@
  * Breakpoint [Mixin]
  * Return media query
  */
+@import url("https://fonts.googleapis.com/css?family=Cormorant:400");
 .lp-florentina {
   max-width: 920px;
   margin: 0 auto;
   font-size: 12px;
-  color: #31210b; }
+  color: #31210b;
+  font-family: 'Open Sans', Montserrat, sans-serif; }
   @media screen and (min-width: 34em) {
     .lp-florentina {
       font-size: 16px; } }
@@ -63,7 +65,8 @@
   justify-content: center;
   flex-direction: column;
   flex-flow: column-reverse;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border: 1px solid #eae6e0; }
   @media screen and (min-width: 34em) {
     .lp-florentina__section {
       flex-direction: row;
@@ -81,3 +84,23 @@
     .lp-florentina__content,
     .lp-florentina__image {
       width: 50%; } }
+
+.lp-florentina__section-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #946f4c;
+  border-bottom: 1px solid #31210b;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section-title {
+      font-size: 4.5rem;
+      margin-right: -4rem; } }
+
+.lp-florentina__section-content {
+  display: block;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section-content {
+      margin-bottom: 4rem; } }

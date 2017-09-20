@@ -31,21 +31,21 @@
   max-width: 920px;
   margin: 0 auto; }
 
-.lp-florentina-section {
+.lp-florentina__section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-flow: column-reverse; }
   @media screen and (min-width: 34em) {
-    .lp-florentina-section {
+    .lp-florentina__section {
       flex-direction: row;
       flex-flow: row; } }
 
-.lp-florentina-content,
-.lp-florentina-image {
+.lp-florentina__content,
+.lp-florentina__image {
   width: 100%; }
   @media screen and (min-width: 34em) {
-    .lp-florentina-content,
-    .lp-florentina-image {
+    .lp-florentina__content,
+    .lp-florentina__image {
       width: 50%; } }

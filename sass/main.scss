@@ -25,7 +25,11 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   margin: 0 auto;
 }
 
-.lp-florentina-section {
+.lp-florentina__hero {
+
+}
+
+.lp-florentina__section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,8 +42,8 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   }
 }
 
-.lp-florentina-content,
-.lp-florentina-image {
+.lp-florentina__content,
+.lp-florentina__image {
   width: 100%;
 
   @include breakpoint(small) {

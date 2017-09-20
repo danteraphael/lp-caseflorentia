@@ -27,6 +27,7 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "imagemin": "^5.3.1",
+    "mediaqueries-sass-mixin": "^1.2.1",
     "reload": "^2.2.2",
     "sass": "^1.0.0-beta.2"
   }

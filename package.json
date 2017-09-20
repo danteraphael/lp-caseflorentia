@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/danteraphael/lp-caseflorentia/issues"
   },
-  "homepage": "https://github.com/danteraphael/lp-caseflorentia#readme"
+  "homepage": "https://github.com/danteraphael/lp-caseflorentia#readme",
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "imagemin": "^5.3.1",
+    "reload": "^2.2.2",
+    "sass": "^1.0.0-beta.2"
+  }
 }

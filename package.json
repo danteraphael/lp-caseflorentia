@@ -1,0 +1,23 @@
+{
+  "name": "caseflorentia",
+  "version": "1.0.0",
+  "description": "Landing page for Ballard Designs Case Florentia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/danteraphael/lp-caseflorentia.git"
+  },
+  "keywords": [
+    "Case",
+    "Florentia"
+  ],
+  "author": "Dante Raphael Designs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danteraphael/lp-caseflorentia/issues"
+  },
+  "homepage": "https://github.com/danteraphael/lp-caseflorentia#readme"
+}

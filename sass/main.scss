@@ -15,13 +15,16 @@ $mq-breakpoints: (
     xxlarge: 1440px,
 ) !default;
 
-$color-highlight: '#a63932';
+$color-base: #31210b;
+$color-highlight: #a63932;
 $sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
 $serif: "Cormorant",Times,"Times New Roman",serif;
 
 .lp-florentina {
   max-width: 920px;
   margin: 0 auto;
+
+  color: $color-base;
 }
 
 .lp-florentina__hero {

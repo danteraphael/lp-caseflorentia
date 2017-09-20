@@ -53,6 +53,9 @@
     .lp-florentina__hero-content,
     .lp-florentina__content {
       padding: 4rem; } }
+  .lp-florentina__hero-content .button,
+  .lp-florentina__content .button {
+    font-size: 1.25rem; }
 
 .lp-florentina__section {
   display: flex;

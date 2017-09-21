@@ -27,7 +27,7 @@ $sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
 $serif: "Cormorant",Times,"Times New Roman",serif;
 
 .lp-florentina {
-  max-width: 920px;
+  max-width: 950px;
   margin: 0 auto;
   font-size: 12px;
   color: $color-base;
@@ -44,6 +44,7 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  background-color: $color-background;
 
   @include breakpoint(small) {
     flex-direction: row;
@@ -51,19 +52,33 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   }
 }
 
-.lp-florentina__hero-content,
-.lp-florentina__content {
-  background-color: $color-background;
-  padding: 1rem;
-
-  @include breakpoint(small) {
-    padding: 4rem;
-  }
-
-  .button {
-    font-size: 1.25rem;
-  }
+.lp-florentina__inner {
+  max-width: 318px;
+  margin: 0 auto;
 }
+
+.lp-florentina__hero-header {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.lp-florentina__hero-subtitle {
+  color: $color-scondary;
+  border-bottom: 1px solid $color-scondary;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.lp-florentina__hero-subtitle-styled {
+  display: block;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 4rem;
+}
+
 
 // Section theme
 .lp-florentina__section {
@@ -74,11 +89,25 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   flex-flow: column-reverse;
   margin-bottom: 1rem;
   border: 1px solid darken($color-background, 5%);
+  background-color: $color-background;
 
   @include breakpoint(small) {
     flex-direction: row;
     flex-flow: row;
     margin-bottom: 3rem;
+  }
+}
+
+.lp-florentina__hero-content,
+.lp-florentina__content {
+  padding: 1rem;
+
+  @include breakpoint(small) {
+    padding: 3rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
   }
 }
 
@@ -89,7 +118,6 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   width: 100%;
 
   @include breakpoint(medium) {
-    width: 50%;
     flex: 1;
   }
 }

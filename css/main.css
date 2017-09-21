@@ -48,6 +48,10 @@
       flex-direction: row;
       margin-bottom: 3rem; } }
 
+.lp-florentina__inner {
+  max-width: 318px;
+  margin: 0 auto; }
+
 .lp-florentina__hero-header {
   text-align: center;
   display: block;

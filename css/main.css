@@ -27,12 +27,11 @@
  * Breakpoint [Mixin]
  * Return media query
  */
-@import url("https://fonts.googleapis.com/css?family=Cormorant:400");
 .lp-florentina {
   max-width: 950px;
   margin: 0 auto;
-  font-size: 12px;
-  color: #31210b;
+  font-size: 14px;
+  color: #000000;
   font-family: 'Open Sans', Montserrat, sans-serif; }
   @media screen and (min-width: 34em) {
     .lp-florentina {
@@ -42,7 +41,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  background-color: #f4f2ef; }
+  border: 1px solid #eae6e0; }
   @media screen and (min-width: 34em) {
     .lp-florentina__hero {
       flex-direction: row;
@@ -58,11 +57,11 @@
   margin: 0 auto; }
 
 .lp-florentina__hero-subtitle {
-  color: #946f4c;
+  color: #000000;
   border-bottom: 1px solid #946f4c;
   padding-bottom: 2rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   font-style: normal; }
 
 .lp-florentina__hero-subtitle-styled {
@@ -77,25 +76,33 @@
   justify-content: center;
   flex-direction: column;
   flex-flow: column-reverse;
-  margin-bottom: 1rem;
-  border: 1px solid #eae6e0;
-  background-color: #f4f2ef; }
+  margin-bottom: 2rem;
+  border: 1px solid #eae6e0; }
   @media screen and (min-width: 34em) {
     .lp-florentina__section {
       flex-direction: row;
       flex-flow: row;
       margin-bottom: 3rem; } }
 
+.lp-florentina__hero-content {
+  max-width: 454px; }
+
 .lp-florentina__hero-content,
 .lp-florentina__content {
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
   @media screen and (min-width: 34em) {
     .lp-florentina__hero-content,
     .lp-florentina__content {
       padding: 3rem; } }
   .lp-florentina__hero-content .button,
   .lp-florentina__content .button {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    display: block; }
+    @media screen and (min-width: 34em) {
+      .lp-florentina__hero-content .button,
+      .lp-florentina__content .button {
+        display: inline-block; } }
 
 .lp-florentina__hero-content,
 .lp-florentina__hero-image,
@@ -110,11 +117,10 @@
       flex: 1; } }
 
 .lp-florentina__section-title {
-  text-transform: uppercase;
-  font-style: normal;
+  text-transform: none;
   font-size: 2.5rem;
-  color: #946f4c;
-  border-bottom: 1px solid #31210b;
+  color: #000000;
+  border-bottom: 1px solid #000000;
   padding-bottom: 1rem;
   margin-bottom: 2rem; }
   @media screen and (min-width: 34em) {
@@ -124,7 +130,7 @@
 
 .lp-florentina__section-content {
   display: block;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
   @media screen and (min-width: 34em) {
     .lp-florentina__section-content {
       margin-bottom: 4rem; } }

@@ -16,12 +16,11 @@ $mq-breakpoints: (
 ) !default;
 
 // Color Swatch
-$color-base: #31210b; // Dark brown
+$color-black: #000000;
+$color-base: $color-black; // Dark brown
 $color-highlight: #a63932; // Not used
 $color-scondary: #946f4c; // Light brown
 $color-background: #f4f2ef; // Very light brown
-
-@import url('https://fonts.googleapis.com/css?family=Cormorant:400');
 
 $sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
 $serif: "Cormorant",Times,"Times New Roman",serif;
@@ -29,7 +28,7 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 .lp-florentina {
   max-width: 950px;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 14px;
   color: $color-base;
   font-family: 'Open Sans', Montserrat, sans-serif;
 
@@ -44,7 +43,7 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  background-color: $color-background;
+  border: 1px solid darken($color-background, 5%);
 
   @include breakpoint(small) {
     flex-direction: row;
@@ -64,11 +63,11 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 }
 
 .lp-florentina__hero-subtitle {
-  color: $color-scondary;
+  color: $color-black;
   border-bottom: 1px solid $color-scondary;
   padding-bottom: 2rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   font-style: normal;
 }
 
@@ -87,9 +86,8 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   justify-content: center;
   flex-direction: column;
   flex-flow: column-reverse;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: 1px solid darken($color-background, 5%);
-  background-color: $color-background;
 
   @include breakpoint(small) {
     flex-direction: row;
@@ -98,9 +96,14 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   }
 }
 
+.lp-florentina__hero-content {
+  max-width: 454px;
+}
+
 .lp-florentina__hero-content,
 .lp-florentina__content {
   padding: 1rem;
+  width: 100%;
 
   @include breakpoint(small) {
     padding: 3rem;
@@ -108,6 +111,11 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 
   .button {
     font-size: 1.25rem;
+    display: block;
+
+    @include breakpoint(small) {
+      display: inline-block;
+    }
   }
 }
 
@@ -123,11 +131,10 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
 }
 
 .lp-florentina__section-title {
-  text-transform: uppercase;
-  font-style: normal;
+  text-transform: none;
   font-size: 2.5rem;
-  color: $color-scondary;
-  border-bottom: 1px solid $color-base;
+  color: $color-black;
+  border-bottom: 1px solid $color-black;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 
@@ -137,10 +144,9 @@ $serif: "Cormorant",Times,"Times New Roman",serif;
   }
 }
 
-
 .lp-florentina__section-content {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   @include breakpoint(small) {
     margin-bottom: 4rem;
   }

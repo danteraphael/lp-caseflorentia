@@ -47,9 +47,23 @@
       flex-direction: row;
       margin-bottom: 3rem; } }
 
+.lp-florentina__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  margin-bottom: 1rem;
+  border: 1px solid #eae6e0;
+  background-color: #f4f2ef; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section {
+      flex-direction: row;
+      flex-flow: row;
+      margin-bottom: 3rem; } }
+
 .lp-florentina__hero-content,
 .lp-florentina__content {
-  background-color: #f4f2ef;
   padding: 1rem; }
   @media screen and (min-width: 34em) {
     .lp-florentina__hero-content,
@@ -58,20 +72,6 @@
   .lp-florentina__hero-content .button,
   .lp-florentina__content .button {
     font-size: 1.25rem; }
-
-.lp-florentina__section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-flow: column-reverse;
-  margin-bottom: 1rem;
-  border: 1px solid #eae6e0; }
-  @media screen and (min-width: 34em) {
-    .lp-florentina__section {
-      flex-direction: row;
-      flex-flow: row;
-      margin-bottom: 3rem; } }
 
 .lp-florentina__hero-content,
 .lp-florentina__hero-image,

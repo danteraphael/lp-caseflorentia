@@ -1,0 +1,164 @@
+@import "node_modules/mediaqueries-sass-mixin/mediaqueries-sass-mixin";
+
+// Base font size to convert from px to rem
+$mq-font-size: 16px !default;
+
+// Default media type
+$mq-media-type: 'screen' !default;
+
+// Default breakpoints
+$mq-breakpoints: (
+    small: 544px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+) !default;
+
+// Color Swatch
+$color-black: #000000;
+$color-base: $color-black; // Dark brown
+$color-highlight: #a63932; // Not used
+$color-scondary: #946f4c; // Light brown
+$color-background: #f4f2ef; // Very light brown
+
+$sans-serif: "Montserrat",Verdana,Helvetica,sans-serif;
+$serif: "Cormorant",Times,"Times New Roman",serif;
+
+.lp-florentina {
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: $color-base;
+  font-family: 'Open Sans', Montserrat, sans-serif;
+
+
+  @include breakpoint(small) {
+    font-size: 16px;
+  }
+}
+
+// Hero theme
+.lp-florentina__hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: 1px solid darken($color-background, 5%);
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+}
+
+.lp-florentina__inner {
+  max-width: 318px;
+  margin: 0 auto;
+}
+
+.lp-florentina__hero-header {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.lp-florentina__hero-subtitle {
+  color: $color-black;
+  border-bottom: 1px solid $color-scondary;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+}
+
+.lp-florentina__hero-subtitle-styled {
+  display: block;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+
+// Section theme
+.lp-florentina__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  margin-bottom: 2rem;
+  border: 1px solid darken($color-background, 5%);
+
+  @include breakpoint(small) {
+    flex-direction: row;
+    flex-flow: row;
+    margin-bottom: 3rem;
+  }
+}
+
+.lp-florentina__hero-content {
+  max-width: 454px;
+}
+
+.lp-florentina__hero-content,
+.lp-florentina__content {
+  padding: 1rem;
+  width: 100%;
+
+  @include breakpoint(small) {
+    padding: 3rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+    display: block;
+
+    @include breakpoint(small) {
+      display: inline-block;
+    }
+  }
+}
+
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
+.lp-florentina__content,
+.lp-florentina__section-image {
+  width: 100%;
+
+  @include breakpoint(medium) {
+    flex: 1;
+  }
+}
+
+.lp-florentina__section-title {
+  text-transform: none;
+  font-size: 2.5rem;
+  color: $color-black;
+  border-bottom: 1px solid $color-black;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint(small) {
+    font-size: 4rem;
+    margin-right: -4rem;
+  }
+}
+
+.lp-florentina__section-content {
+  display: block;
+  margin-bottom: 3rem;
+  @include breakpoint(small) {
+    margin-bottom: 4rem;
+  }
+}
+
+.lp-florentina__section-image {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+  @include breakpoint(small) {
+    margin: 0;
+    padding: 0;
+  }
+}

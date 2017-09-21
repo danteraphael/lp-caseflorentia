@@ -1,0 +1,145 @@
+/**
+ * Mediaqueries Sass Mixin
+ * Author Javier Puche Victoria
+ * Version 1.2.1
+ * https://github.com/javipuche/mediaqueries-sass-mixin
+ * Licensed under MIT Open Source
+ */
+/**
+ * Default config
+ */
+/**
+ * Px to Em [Function]
+ */
+/**
+ * Map Next Value [Function]
+ * Get Next value from sass map
+ */
+/**
+ * Breakpoint Type [Function]
+ * Check if a value is a key map, number or direction
+ */
+/**
+ * Breakpoint [Function]
+ * Check selected Breakpoint
+ */
+/**
+ * Breakpoint [Mixin]
+ * Return media query
+ */
+.lp-florentina {
+  max-width: 950px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #000000;
+  font-family: 'Open Sans', Montserrat, sans-serif; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina {
+      font-size: 16px; } }
+
+.lp-florentina__hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: 1px solid #eae6e0; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__hero {
+      flex-direction: row;
+      margin-bottom: 3rem; } }
+
+.lp-florentina__inner {
+  max-width: 318px;
+  margin: 0 auto; }
+
+.lp-florentina__hero-header {
+  text-align: center;
+  display: block;
+  margin: 0 auto; }
+
+.lp-florentina__hero-subtitle {
+  color: #000000;
+  border-bottom: 1px solid #946f4c;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: none;
+  font-style: normal; }
+
+.lp-florentina__hero-subtitle-styled {
+  display: block;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 4rem; }
+
+.lp-florentina__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  margin-bottom: 2rem;
+  border: 1px solid #eae6e0; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section {
+      flex-direction: row;
+      flex-flow: row;
+      margin-bottom: 3rem; } }
+
+.lp-florentina__hero-content {
+  max-width: 454px; }
+
+.lp-florentina__hero-content,
+.lp-florentina__content {
+  padding: 1rem;
+  width: 100%; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__hero-content,
+    .lp-florentina__content {
+      padding: 3rem; } }
+  .lp-florentina__hero-content .button,
+  .lp-florentina__content .button {
+    font-size: 1.25rem;
+    display: block; }
+    @media screen and (min-width: 34em) {
+      .lp-florentina__hero-content .button,
+      .lp-florentina__content .button {
+        display: inline-block; } }
+
+.lp-florentina__hero-content,
+.lp-florentina__hero-image,
+.lp-florentina__content,
+.lp-florentina__section-image {
+  width: 100%; }
+  @media screen and (min-width: 48em) {
+    .lp-florentina__hero-content,
+    .lp-florentina__hero-image,
+    .lp-florentina__content,
+    .lp-florentina__section-image {
+      flex: 1; } }
+
+.lp-florentina__section-title {
+  text-transform: none;
+  font-size: 2.5rem;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section-title {
+      font-size: 4rem;
+      margin-right: -4rem; } }
+
+.lp-florentina__section-content {
+  display: block;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section-content {
+      margin-bottom: 4rem; } }
+
+.lp-florentina__section-image {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center; }
+  @media screen and (min-width: 34em) {
+    .lp-florentina__section-image {
+      margin: 0;
+      padding: 0; } }

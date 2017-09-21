@@ -86,6 +86,9 @@
       flex-flow: row;
       margin-bottom: 3rem; } }
 
+.lp-florentina__hero-content {
+  max-width: 454px; }
+
 .lp-florentina__hero-content,
 .lp-florentina__content {
   padding: 1rem; }
